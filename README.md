@@ -20,5 +20,8 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+Type 'bundle install' to install required gems
+Type 'bin/rails s' to start the rails server
+visit localhost:3000 in the browser
 
 * ...
