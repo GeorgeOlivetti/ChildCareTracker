@@ -1,10 +1,19 @@
 ## README
 
 
+
 Ryan Tumbusch - (803)389-0278
 Brice - 916-792-4358
 
 
+
+Joshua Terry
+6033120337
+
+
+Brice - 916-792-4358
+
+chris landry 404 906 0686
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
