@@ -6,6 +6,7 @@ Joshua Terry
 
 Brice - 916-792-4358
 
+chris landry 404 906 0686
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
