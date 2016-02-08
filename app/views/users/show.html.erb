@@ -1,0 +1,22 @@
+<p>
+  <strong>Firstname:</strong>
+  <%= @user.firstName %>
+</p>
+
+<p>
+  <strong>Lastname:</strong>
+  <%= @user.lastName %>
+</p>
+
+<p>
+  <strong>Phonenumber:</strong>
+  <%= @user.phoneNumber %>
+</p>
+
+<p>
+  <strong>Children:</strong>
+  <%= @user.children %>
+</p>
+
+<%= link_to 'Edit', edit_user_path(@user) %> |
+<%= link_to 'Back', users_path %>

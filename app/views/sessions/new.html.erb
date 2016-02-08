@@ -1,0 +1,11 @@
+<h1>Login</h1>
+<p>Please sign in using your phone number</p>
+<%= form_tag sessions_path do %>
+  <div class="field">
+    <%= label_tag :phoneNumber %><br>
+    <%= text_field_tag :phoneNumber %>
+  </div>
+  <div class="actions">
+    <%= submit_tag "Log In" %>
+  </div>
+<% end %>
