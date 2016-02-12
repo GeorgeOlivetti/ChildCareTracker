@@ -1,5 +1,8 @@
 class User < ApplicationRecord
 
+  # has_many :Child, dependent: :destroy
+  has_many :Child
+
   validates :firstName,
       presence: true
   validates :lastName,

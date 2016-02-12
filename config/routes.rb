@@ -1,5 +1,13 @@
 Rails.application.routes.draw do
 
+  get 'children/new', to: 'children#new', as: 'createChild'
+
+  get 'children/create'
+
+  get 'children/destroy'
+
+  get 'children/update'
+
   resources :sessions, only: [:new, :create, :destroy]
 
   get 'signup', to: 'users#new', as: 'signup'
