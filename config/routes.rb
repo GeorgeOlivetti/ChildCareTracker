@@ -14,7 +14,10 @@ Rails.application.routes.draw do
   get 'login', to: 'sessions#new', as: 'login'
   get 'logout', to: 'sessions#destroy', as: 'logout'
 
-  resources :users
+
+  resource :users do
+    get "userDashboard", as: 'dashboard'
+  end
   root 'pages#signup'
 
   get 'pages/login'
@@ -22,6 +25,8 @@ Rails.application.routes.draw do
   get 'pages/signup'
 
   get 'pages/checkin'
+
+  #get 'users/:id/userDashboard', as: 'dashboard'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 

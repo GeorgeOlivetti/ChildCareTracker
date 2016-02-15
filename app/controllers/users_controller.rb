@@ -7,6 +7,12 @@ class UsersController < ApplicationController
     @users = User.all
   end
 
+  # GET /users/1/userDashboard
+  def userDashboard
+    @user = User.where('id' == session[:user_id])
+
+  end
+
   # GET /users/1
   # GET /users/1.json
   def show
