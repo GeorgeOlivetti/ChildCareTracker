@@ -9,7 +9,7 @@ class UsersController < ApplicationController
 
   # GET /users/1/userDashboard
   def userDashboard
-    @user = User.where('id' == session[:user_id])
+    @user = User.where(id: session[:user_id]).first
 
   end
 

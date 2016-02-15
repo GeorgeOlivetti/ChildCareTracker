@@ -18,7 +18,7 @@ Rails.application.routes.draw do
   resource :users do
     get "userDashboard", as: 'dashboard'
   end
-  root 'pages#signup'
+  root 'pages#welcome'
 
   get 'pages/login'
 
