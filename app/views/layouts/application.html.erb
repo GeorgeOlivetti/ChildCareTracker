@@ -10,21 +10,41 @@
   </head>
 
   <body>
-    <div id="user_header">
-      <% if current_user %>
-          Logged in as <%= current_user.firstName %> <%= current_user.lastName %>.
-          <%= link_to "Log Out", logout_path %>
-      <% else %>
-          <%= link_to "Sign Up", signup_path %> or
-          <%= link_to "Login", login_path %>
-      <% end %>
-    </div>
+    <nav class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div id="user_header">
+            <% if current_user %>
+                <ul class="nav navbar-nav navbar-right pull-right">
+                  <li class="navbar-links"><a href="#" class="navbar-link">Logged in as <%= current_user.firstName %> <%= current_user.lastName %></a></li>
+                  <li class="navbar-links"><%= link_to "Log Out", logout_path %></li>
+                </ul>
+
+            <% else %>
+                <ul class="nav navbar-nav navbar-right pull-right">
+                  <li class="navbar-links"><%= link_to "Sign Up", signup_path %></li>
+                  <li class="navbar-links"><%= link_to "Login", login_path %></li>
+                </ul>
+
+
+            <% end %>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+
+
+
     <% flash.each do |key, value| %>
       <% content_tag(:div, class: "alert alert-#{key}") do %>
         <p><%= value %></p>
       <% end %>
     <% end %>
 
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
+
   </body>
 </html>
